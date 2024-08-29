@@ -1,0 +1,43 @@
+.html, body {
+-webkit-tap-highlight-color: transparent;
+user-select: none;
+touch-action: manipulation;
+overflow: none;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.email {
+    font-size: medium;
+    font-weight: 550;
+}
+
+.body-img {
+    height: 4.5rem;
+}
+
+.alert-green {
+    margin-top: 20px;
+    padding: 10px 0px 10px 14px;
+}
+
+.alert-red {
+    margin-top: 20px;
+    padding: 10px 0px 10px 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.loading-img {
+    height: 2rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./style/email(1).png">
+    <title>Email Validator</title>
+    <script src="./src/main.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <nav class="bg-gray-800">
+        <div class="mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="logo" src="./style/email.png" alt="Your Company">
+                        <h2 class="h2 mx-auto px-2 sm:px-6">Email Validator</h2>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <img class="mx-auto w-auto body-img" src="./style/correct.png" alt="Your Company">
+            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Enter your Email for
+                validation</h2>
+        </div>
+
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form class="space-y-6" id="emailForm">
+                <div>
+                    <label for="email" class="text-gray-900 email">Email address:</label>
+                    <div class="mt-2">
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            class="
+                          block w-full rounded-md border-0 py-2 px-3 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+
+                <!-- Loading spinner SVG -->
+                <div id="loadingSpinner" class="hide ">
+                    <img src="./style/Spin-1s-200px.svg" alt="Loading Spinner" class="mx-auto w-auto loading-img">
+                </div>
+
+                <div>
+                    <button type="button" id="checkValidityBtn"
+                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Check Validation
+                    </button>
+                </div>
+            </form>
+            <div id="validationResult"></div>
+        </div>
+    </div>
+    <script type="module" src="./src/index.mjs"></script>
+</body>
+
+</html>
